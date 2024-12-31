@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="styles/slick.css">
+    <link rel="stylesheet" type="text/css" href="styles/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="styles/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/animate.min.css">
+
+<!--    <link rel="stylesheet/less" type="text/css" href="styles/style.less"/>-->
+    <link rel="stylesheet/less" type="text/css" href="dist/style.min.css"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+
+    <title>Бургерная</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-container">
+        <div class="header-flex"></div>
+        <div class="logo wow animate__animated animate__heartBeat">
+            <img src="images/logo.png" alt="logo">
+        </div>
+
+        <nav class="menu" id="menu">
+            <div class="menu-close">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path d="M300.188,246L484.14,62.04c5.06-5.064,7.852-11.82,7.86-19.024c0-7.208-2.792-13.972-7.86-19.028L468.02,7.872
+                                    c-5.068-5.076-11.824-7.856-19.036-7.856c-7.2,0-13.956,2.78-19.024,7.856L246.008,191.82L62.048,7.872
+                                    c-5.06-5.076-11.82-7.856-19.028-7.856c-7.2,0-13.96,2.78-19.02,7.856L7.872,23.988c-10.496,10.496-10.496,27.568,0,38.052
+                                    L191.828,246L7.872,429.952c-5.064,5.072-7.852,11.828-7.852,19.032c0,7.204,2.788,13.96,7.852,19.028l16.124,16.116
+                                    c5.06,5.072,11.824,7.856,19.02,7.856c7.208,0,13.968-2.784,19.028-7.856l183.96-183.952l183.952,183.952
+                                    c5.068,5.072,11.824,7.856,19.024,7.856h0.008c7.204,0,13.96-2.784,19.028-7.856l16.12-16.116
+                                    c5.06-5.064,7.852-11.824,7.852-19.028c0-7.204-2.792-13.96-7.852-19.028L300.188,246z"/>
+                            </g>
+                        </g>
+                </svg>
+            </div>
+            <ul class="menu-list">
+                <li class="menu-list-links wow animate__animated animate__tada">
+                    <a class="link" href="#boomBurgerMenu">Меню</a>
+                </li>
+                <li class="menu-list-links wow animate__animated animate__tada">
+                    <a class="link" href="#differences">Наши преимущества</a>
+                </li>
+                <li class="menu-list-links wow animate__animated animate__tada">
+                    <a class="link" href="#boomBurger">О Boomburger</a>
+                </li>
+                <li class="menu-list-links wow animate__animated animate__tada">
+                    <a class="link" href="#reviews">Отзывы</a>
+                </li>
+                <li class="menu-list-links wow animate__animated animate__tada">
+                    <a class="link" href="#stock">Акции</a>
+                </li>
+            </ul>
+            <div class="address wow animate__animated animate__flipInX">
+                <img src="images/placeholder.png" alt="placeholder">
+                <span>г. Москва, м. Лубянка Никольская ул., 24</span>
+            </div>
+        </nav>
+        <div class="header-burger" id="burger">
+            <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="30px" height="17px">
+                <path fill-rule="evenodd" fill="rgb(178, 143, 102)"
+                      d="M-0.000,0.000 L29.1000,0.000 L29.1000,2.1000 L-0.000,2.1000 L-0.000,0.000 Z"/>
+                <path fill-rule="evenodd" fill="rgb(178, 143, 102)"
+                      d="M-0.000,14.000 L29.1000,14.000 L29.1000,16.1000 L-0.000,16.1000 L-0.000,14.000 Z"/>
+                <path fill-rule="evenodd" fill="rgb(178, 143, 102)"
+                      d="M-0.000,7.000 L29.1000,7.000 L29.1000,9.1000 L-0.000,9.1000 L-0.000,7.000 Z"/>
+            </svg>
+        </div>
+    </div>
+</header>
+
+<section class="main">
+    <div class="container main-container">
+        <div class="main-info wow animate__animated animate__backInLeft">
+            <h1 class="info-title">
+                Сочные бургеры <br>
+                из свежих продуктов
+            </h1>
+            <div class="info-text">
+                Приходите попробовать наши бургеры. <br>
+                Благодаря открытой кухне вы сможете увидеть процесс
+                приготовления вашего любимого фастфуда
+            </div>
+            <div class="info-action">
+                <a href="#book-table">
+                    <button class="btn main-btn">Забронировать стол</button>
+                </a>
+            </div>
+            <div class="info-img-text">
+                <img id="chef" src="images/chef.png" alt="шеф">
+                <span>
+                    Огромный выбор бургеров
+                    из любого мяса, птицы и
+                    морепродуктов
+                </span>
+                <img id="food-tray" src="images/food-tray.png" alt="блюдо">
+                <span>
+                    Приготовим бургер любого
+                    размера за 15 минут или
+                    забирайте бесплатно
+                </span>
+            </div>
+        </div>
+        <div class="main-image wow animate__animated animate__bounceInRight">
+            <div class="promotion">
+                <span class="promotion-red">
+                    Акция <br>
+                    28.07-29.07
+                </span>
+                <div class="promotion-share">
+                    <span class="share-price"> 550 руб.</span>
+                    <span class="share">850 руб.</span>
+                </div>
+            </div>
+
+            <div class="burger-img">
+                <img id="burger-fire" src="images/burger-ogonj.png" alt="огонь">
+                <img src="images/burger.png" alt="Бургер">
+            </div>
+            <div class="burger-description">
+                <h3>Грязный СанчеZ</h3>
+                <span> котлета из мраморной говядины,
+                    бекон, сыр чеддер, салат,вишневый
+                    соус, фирменный соус
+                </span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="boomBurger">
+    <div class="container boomBurger-container">
+        <div class="boomBurger-title-div">
+            <h2 class="boomBurger-title wow animate__animated animate__rubberBand" id="boomBurger">О BoomBurger</h2>
+            <img class="boomBurger-title-img" src="images/320perec-title.png" alt="Перец-чили">
+        </div>
+        <span class="boomBurger-text1">
+            Команда «BB» решила найти рецепт идеального бургера,
+            который смог бы утолить любой голод и быть
+            настоящим произведением искусства!
+        </span>
+        <span class="boomBurger-text2">
+            Мы отправились в гастрономическое путешествие по
+            разным странам, катались по городам Америки и
+            Европы в поисках лучших секретов бургерной
+            индустрии… но в результате поняли — идеальный
+            бургер — это бургер, приготовленный из качественных
+            ингредиентов.
+        </span>
+        <div class="boomBurger-img wow animate__animated animate__hinge">
+            <img id="burgerTrio1" src="images/burgerTrio1.png" alt="burgerTrio">
+            <img id="burgerTrio2" src="images/burgerTrio2.png" alt="burgerTrio">
+            <img id="burgerTrio3" src="images/burgerTrio3.png" alt="burgerTrio">
+        </div>
+    </div>
+</section>
+
+<section class="differences">
+    <div class="container differences-container">
+        <div class="differences-title" id="differences">
+            <h2 class="wow animate__animated animate__rubberBand">Чем мы отличаемся</h2>
+            <img src="images/differences-title.png" alt="differences">
+        </div>
+        <div class="differences-detail">
+            <div class="differences-detail-left1">
+                <img src="images/plant-left1.png" alt="left1">
+                <span class="detail-span">
+                    Используем <br>
+                    Только натуральные
+                    фермерские продукты
+                 </span>
+            </div>
+            <div class="differences-detail-left2">
+                <img src="images/cooking-left2.png" alt="left2">
+                <span class="detail-span">
+                    Открытая кухня —
+                    посмотрите, как готовится
+                    ваш бургер
+                 </span>
+            </div>
+
+            <div class="differences-detail-center wow animate__animated animate__zoomIn">
+                <img src="images/differences-burger.png" alt="differences-burger">
+            </div>
+
+            <div class="differences-detail-right1">
+                <img src="images/dance-right1.png" alt="right1">
+                <span class="detail-span">
+                    В нашем ресторане
+                    всегда атмосфера
+                    праздника
+                 </span>
+            </div>
+            <div class="differences-detail-right2">
+                <img src="images/dog-right2.png" alt="right2">
+                <span class="detail-span">
+                    Dog friendly — к нам
+                    можно с четвероногим
+                    другом
+                 </span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="boomBurgerMenu">
+    <div class="container boomBurgerMenu-container">
+        <div class="menuBurgerTitle">
+            <img src="images/menuBerger.png" alt="menuBurger">
+            <h2 class="boomBurgerMenu-title wow animate__animated animate__rubberBand" id="boomBurgerMenu">Меню</h2>
+
+        </div>
+
+        <div class="boomBurgerMenu-products tab" id="tab-1">
+
+            <div class="tab-nav">
+                <button type="button" class="tab-btn tab-btn-active boomBurgerMenu-product" data-target-id="0">
+                    <img src="images/chicken-menu1.png" alt="chicken">
+                    <span>цыпленок</span>
+                </button>
+                <button type="button" class="tab-btn boomBurgerMenu-product" data-target-id="1">
+                    <img src="images/cow-menu2.png" alt="cow">
+                    <span>говядина</span>
+                </button>
+                <button type="button" class="tab-btn boomBurgerMenu-product" data-target-id="2">
+                    <img src="images/duck-menu3.png" alt="duck">
+                    <span>утка</span>
+                </button>
+                <button type="button" class="tab-btn boomBurgerMenu-product" data-target-id="3">
+                    <img src="images/crab-menu4.png" alt="crab">
+                    <span>краб</span>
+                </button>
+            </div>
+
+            <div class="boomBurgerMenu-content tab-content">
+
+                <div class="content tab-pane tab-pane-show" data-id="0">
+                    <div class="slider lazy">
+                        <div>
+                            <div class="content-card">
+                                <div class="content-card-img">
+                                    <img src="images/menu/menu-burger1-1.png" alt="меню"/>
+                                </div>
+                                <div class="content-burger">
+                                    <h3>Грязный СанчеZ</h3>
+                                    <span>котлета из мраморной
+                                  говядины, бекон, сыр
+                                  чеддер, салат, вишневый
+                                  соус, фирменный соус
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="content-card">
+                                <div class="content-card-img">
+                                    <img src="images/menu/menu-burger1-2.png" alt="меню"/>
+                                </div>
+                                <div class="content-burger">
+                                    <h3>Красавчик Элвин</h3>
+                                    <span>
+                                    котлета из мраморной
+                                    говядины, бекон, сыр
+                                    чеддер, помидор, салат,
+                                    фирменный соус барбекю
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="content-card">
+                                <div class="content-card-img">
+                                    <img src="images/menu/menu-burger1-3.png" alt="меню"/>
+                                </div>
+                                <div class="content-burger">
+                                    <h3>Местный шериф</h3>
+                                    <span>котлета из мраморной
+                                    говядины, маринованный
+                                    огурчик, сыр чеддер,
+                                    помидор, салат
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="content-card">
+                                <div class="content-card-img">
+                                    <img src="images/menu/menu-burger1-4.png" alt="меню"/>
+                                </div>
+                                <div class="content-burger">
+                                    <h3>Дух Капитализма</h3>
+                                    <span>котлета из мраморной
+                                    говядины, бекон, сыр
+                                    чеддер, помидор, салат,
+                                    фирменный соус барбекю
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="content-card">
+                                <div class="content-card-img">
+                                    <img src="images/menu/menu-burger1-5.png" alt="меню"/>
+                                </div>
+                                <div class="content-burger">
+                                    <h3>Цезарь бургер</h3>
+                                        <span>салат романо,
+                                            бжаренные кусочки
+                                    куриной грудки, помидоры, анчоусы
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="content-card">
+                                <div class="content-card-img">
+                                    <img src="images/menu/menu-burger1-6.png" alt="меню"/>
+                                </div>
+                                <div class="content-burger">
+                                    <h3>Васаби-бургер</h3>
+                                    <span> сытной говяжьей котлетой
+                                    и овощами,
+                                    жгучего васаби и салата лолло-россо.
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content tab-pane" data-id="1">
+                    <div class="slider lazy">
+                        <div>
+                            <div class="content-card">
+                                <div class="content-card-img">
+                                    <img src="images/menu/menu-burger2-1.png" alt="меню"/>
+                                </div>
+                                <div class="content-burger">
+                                    <h3>Бургер три сыра</h3>
+                                    <span>Идеальный бургер
+                                        с говяжьей котлетой,
+                                        сочными овощами
+                                        и в меру острым соусом.
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="content-card">
+                                <div class="content-card-img">
+                                    <img src="images/menu/menu-burger2-2.png" alt="меню"/>
+                                </div>
+                                <div class="content-burger">
+                                    <h3>Шефбургер</h3>
+                                    <span>
+                                    котлета с  солёными огурчиками,
+                                        салатом, перцем халапеньо
+                                        и золотистыми булочками.
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="content-card">
+                                <div class="content-card-img">
+                                    <img src="images/menu/menu-burger2-3.png" alt="меню"/>
+                                </div>
+                                <div class="content-burger">
+                                    <h3>Чизбургер</h3>
+                                    <span>
+                                        Наиболее популярен американский
+                                        с сыром чеддер. Однако встречаются
+                                        и вариации с сыром дорблю, фета, гауда, пеппер
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="content-card">
+                                <div class="content-card-img">
+                                    <img src="images/menu/menu-burger2-4.png" alt="меню"/>
+                                </div>
+                                <div class="content-burger">
+                                    <h3>Чикенбургер</h3>
+                                    <span>Булочка, овощи, соус.
+                                        В блюдо также может
+                                        включаться сыр, ананасы.
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="content-card">
+                                <div class="content-card-img">
+                                    <img src="images/menu/menu-burger2-5.png" alt="меню"/>
+                                </div>
+                                <div class="content-burger">
+                                    <h3>Чик энд бургер</h3>
+                                    <span>
+                                        бифштекс из 100%-ной говядины,
+                                        приправленный сладкой горчицей и
+                                        томатным кетчупом, подается в
+                                        булочке с кунжутной присыпкой.
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="content-card">
+                                <div class="content-card-img">
+                                    <img src="images/menu/menu-burger2-6.png" alt="меню"/>
+                                </div>
+                                <div class="content-burger">
+                                    <h3>Рокс</h3>
+                                    <span> Самый популярный бургер —
+                                        котлета, бекон, маринованные
+                                        огурцы, сыр чеддер,
+                                        помидоры свежие.
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content tab-pane" data-id="2">
+                    <div class="slider lazy">
+                        <div>
+                            <div class="content-card">
+                                <div class="content-card-img">
+                                    <img src="images/menu/3-1.png" alt="меню"/>
+                                </div>
+                                <div class="content-burger">
+                                    <h3>Воппер Шашлычок</h3>
+                                    <span>Идеальный бургер
+                                        Два нажатия традиционного
+                                        соуса, мелкий салат,
+                                        котлета премьер
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="content-card">
+                                <div class="content-card-img">
+                                    <img src="images/menu/3-2.png" alt="меню"/>
+                                </div>
+                                <div class="content-burger">
+                                    <h3>Биг хит</h3>
+                                    <span>
+                                    Соус биг хит, мелкий
+                                        салат, два огурца на
+                                        пенёк, сыр чеддер на
+                                        верхушку, четыре десятки
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="content-card">
+                                <div class="content-card-img">
+                                    <img src="images/menu/3-3.png" alt="меню"/>
+                                </div>
+                                <div class="content-burger">
+                                    <h3>Шримп ролл</h3>
+                                    <span>
+                                        Одно нажатие соевого соуса,
+                                        лук, салат, четыре креветки
+                                        и вариации с сыром дорблю,
+                                        фета, гауда, пеппер
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="content-card">
+                                <div class="content-card-img">
+                                    <img src="images/menu/3-4.png" alt="меню"/>
+                                </div>
+                                <div class="content-burger">
+                                    <h3>Гранд де люкс</h3>
+                                    <span>Булочка, Горчица/кетчуп,
+                                        традиционный, лук, два огурца,
+                                        мелкий салат, помидор, два сыра
+                                        чеддер, котлета четверка
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="content-card">
+                                <div class="content-card-img">
+                                    <img src="images/menu/3-5.png" alt="меню"/>
+                                </div>
+                                <div class="content-burger">
+                                    <h3>Биг спешиал</h3>
+                                    <span>
+                                        Три нажатия соуса биг спешиал,
+                                        лук, крупный салат, два помидора,
+                                        три сыра эмменталь, котлета тройка
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="content-card">
+                                <div class="content-card-img">
+                                    <img src="images/menu/menu-burger2-6.png" alt="меню"/>
+                                </div>
+                                <div class="content-burger">
+                                    <h3>Биг спешиал Джуниор</h3>
+                                    <span>Два нажатие соуса
+                                        биг спешиал,лук, мелкий
+                                        салат, помидор, два сыра
+                                        эмменталь, котлета четверка
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content tab-pane" data-id="3">
+                    <div class="slider lazy">
+                        <div>
+                            <div class="content-card">
+                                <div class="content-card-img">
+                                    <img src="images/menu/menu-burger4-1.png" alt="меню"/>
+                                </div>
+                                <div class="content-burger">
+                                    <h3>Барселона</h3>
+                                    <span> Южный соус, мелкий
+                                        салат, два эмменталя,
+                                        три бекона, куриная
+                                        котлета премьер
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="content-card">
+                                <div class="content-card-img">
+                                    <img src="images/menu/menu-burger4-2.png" alt="меню"/>
+                                </div>
+                                <div class="content-burger">
+                                    <h3>Биг ростбиф</h3>
+                                    <span>
+                                    Одно нажатие соуса
+                                        биг спешиал, крупный
+                                        салат, два помидора,
+                                        два сыра эмменталь
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="content-card">
+                                <div class="content-card-img">
+                                    <img src="images/menu/menu-burger4-3.png" alt="меню"/>
+                                </div>
+                                <div class="content-burger">
+                                    <h3>Чикен премьер</h3>
+                                    <span>
+                                        Одно нажатие традиционного,
+                                        кетчуп, мелкий салат, помидор,
+                                        сыр чеддер, два бекона,
+                                        куриная котлета премьер
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="content-card">
+                                <div class="content-card-img">
+                                    <img src="images/menu/menu-burger2-4.png" alt="меню"/>
+                                </div>
+                                <div class="content-burger">
+                                    <h3>Чикенбургер</h3>
+                                    <span>Булочка, овощи, соус.
+                                        В блюдо также может
+                                        включаться сыр, ананасы.
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="content-card">
+                                <div class="content-card-img">
+                                    <img src="images/menu/menu-burger2-5.png" alt="меню"/>
+                                </div>
+                                <div class="content-burger">
+                                    <h3>Чикенхит</h3>
+                                    <span>
+                                        Два нажатия традиционного
+                                        соуса, мелкий салат,
+                                        котлета премьер
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="content-card">
+                                <div class="content-card-img">
+                                    <img src="images/menu/menu-burger2-6.png" alt="меню"/>
+                                </div>
+                                <div class="content-burger">
+                                    <h3>Воппер с сыром</h3>
+                                    <span> Самый популярный бургер —
+                                        сыр плавленый ломтевой,
+                                        салат Айсберг
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="reviews">
+    <div class="container reviews-container">
+        <div class="reviews-title" id="reviews">
+            <img src="images/reviews-title.png" alt="Перец">
+            <h2 class="wow animate__animated animate__rubberBand">Отзывы</h2>
+        </div>
+
+        <div class="swiper mySwiper reviews-cards">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide shadow-reviews-card">
+                    <div class="up-card">
+                        <div class="reviews-card-img">
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <img class="facebook" src="images/facebook.png" alt="facebook">
+                            </a>
+                            <a href="https://instagram.com/" target="_blank">
+                                <img class="instagram" src="images/instagram.png" alt="instagram">
+                            </a>
+                            <h3 class="reviews-card-name">Роман</h3>
+                        </div>
+                        <div class="reviews-card-foto">
+                            <img src="images/foto1-reviews.png" alt="foto">
+                        </div>
+                    </div>
+                    <div class="bottom-card">
+                        <p class="reviews-cards-info">Любимый бургер: <br>
+                            Самая быстрая курочка Запада (KING SIZE)</p>
+                        <p class="reviews-card-description">
+                            Круто отметили день рождения.
+                            Прекрасное обслуживание, заказали <br>
+                            15 бургеров на всех, никто не остался равнодушным!
+                            В общем Я рекомендую этот ресторан - Наш ресторан.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide shadow-reviews-card">
+                    <div class="up-card">
+                        <div class="reviews-card-img">
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <img class="facebook" src="images/facebook.png" alt="facebook">
+                            </a>
+                            <a href="https://instagram.com/" target="_blank">
+                                <img class="instagram" src="images/instagram.png" alt="instagram">
+                            </a>
+                            <h3 class="reviews-card-name">Мария</h3>
+                        </div>
+                        <div class="reviews-card-foto">
+                            <img class="reviews-card-foto" src="images/foto2-reviews.png" alt="foto">
+                        </div>
+                    </div>
+                    <div class="bottom-card">
+                        <p class="reviews-cards-info">Любимый бургер: <br>
+                            Синий крабсбургер</p>
+
+                        <p class="reviews-card-description">
+                            Очень нравится формат заведения, <br>
+                            такого раньше не видела! Бургеры
+                            очень интересные по вкусу. Ингредиенты
+                            тоже супер: необычные, качественные,
+                            вкусные (корень лотоса, морепродукты).
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide shadow-reviews-card">
+                    <div class="up-card">
+                        <div class="reviews-card-img reviews-card-img-right">
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <img class="facebook" src="images/facebook.png" alt="facebook">
+                            </a>
+                            <a href="https://instagram.com/" target="_blank">
+                                <img class="instagram" src="images/instagram.png" alt="instagram">
+                            </a>
+                            <h3 class="reviews-card-name">Наталия</h3>
+                        </div>
+                        <div class="reviews-card-foto">
+                            <img class="reviews-card-foto" src="images/foto3-reviews.png" alt="foto">
+                        </div>
+                    </div>
+                    <div class="bottom-card">
+                        <p class="reviews-cards-info">Любимый бургер: <br>
+                            Завтрак Капитана Америки</p>
+
+                        <p class="reviews-card-description">
+                            О кухне слышала много хороших <br>
+                            отзывов, все правда. Большие порции,
+                            опять таки оооочень вкусно. Рекомендую
+                            этот ресторан, всем именинникам –
+                            каждому уделяют особое внимание.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide shadow-reviews-card">
+                    <div class="up-card">
+                        <div class="reviews-card-img reviews-card-img-right">
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <img class="facebook" src="images/facebook.png" alt="facebook">
+                            </a>
+                            <a href="https://instagram.com/" target="_blank">
+                                <img class="instagram" src="images/instagram.png" alt="instagram">
+                            </a>
+                            <h3 class="reviews-card-name">Катрина</h3>
+                        </div>
+                        <div class="reviews-card-foto">
+                            <img class="reviews-card-foto" src="images/foto3-reviews.png" alt="foto">
+                        </div>
+                    </div>
+                    <div class="bottom-card">
+                        <p class="reviews-cards-info">Любимый бургер: <br>
+                            Самый вкусный Бургер три сыра</p>
+                        <p class="reviews-card-description">
+                            Бургер с индийским колоритом в хорошем смысле.
+                            Вкуснятина!!! Бургер три сыра -
+                            для тех, кто любит без майонеза.
+                            В общем Я рекомендую этот ресторан - Наш ресторан.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide shadow-reviews-card">
+                    <div class="up-card">
+                        <div class="reviews-card-img">
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <img class="facebook" src="images/facebook.png" alt="facebook">
+                            </a>
+                            <a href="https://instagram.com/" target="_blank">
+                                <img class="instagram" src="images/instagram.png" alt="instagram">
+                            </a>
+                            <h3 class="reviews-card-name">Юлия</h3>
+                        </div>
+                        <div class="reviews-card-foto">
+                            <img class="reviews-card-foto" src="images/foto4-reviews.png" alt="foto">
+                        </div>
+                    </div>
+                    <div class="bottom-card">
+                        <p class="reviews-cards-info">Любимый бургер: <br>
+                            Васаби-бургер, Цезарь-бургер</p>
+
+                        <p class="reviews-card-description">
+                            В ресторане чисто и уютно, быстрая
+                            и качественная подача. Все работают слаженно
+                            и в одной команде. Спасибо Вам за Вашу работу!!!
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide shadow-reviews-card">
+                    <div class="up-card">
+                        <div class="reviews-card-img reviews-card-img-left">
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <img class="facebook" src="images/facebook.png" alt="facebook">
+                            </a>
+                            <a href="https://instagram.com/" target="_blank">
+                                <img class="instagram" src="images/instagram.png" alt="instagram">
+                            </a>
+                            <h3 class="reviews-card-name">Илья</h3>
+                        </div>
+                        <div class="reviews-card-foto">
+                            <img class="reviews-card-foto" src="images/foto3-reviews.png" alt="foto">
+                        </div>
+                    </div>
+                    <div class="bottom-card">
+                        <p class="reviews-cards-info">Любимый бургер: <br>
+                            Острый Чикен Чизбургер</p>
+
+                        <p class="reviews-card-description">
+                            Ухх, вот это огонь! Наконец-то я полностью
+                            удовлетворена степенью остроты. Новинка,
+                            от которой реально жжет во рту.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide shadow-reviews-card">
+                    <div class="up-card">
+                        <div class="reviews-card-img reviews-card-img-right">
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <img class="facebook" src="images/facebook.png" alt="facebook">
+                            </a>
+                            <a href="https://instagram.com/" target="_blank">
+                                <img class="instagram" src="images/instagram.png" alt="instagram">
+                            </a>
+                            <h3 class="reviews-card-name">Николай</h3>
+                        </div>
+                        <div class="reviews-card-foto">
+                            <img class="reviews-card-foto" src="images/foto6-reviews.png" alt="foto">
+                        </div>
+                    </div>
+                    <div class="bottom-card">
+                        <p class="reviews-cards-info">Любимый бургер: <br>
+                            Воппер Шашлычок</p>
+                        <p class="reviews-card-description">
+                            Удачная и вкусная реновация знаменитого
+                            бургера «Воппер» в «Воппер Шашлычок» с
+                            помощью оригинального соуса «Гриль» с
+                            ароматом приятного дымка
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide shadow-reviews-card">
+                    <div class="up-card">
+                        <div class="reviews-card-img reviews-card-img-right">
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <img class="facebook" src="images/facebook.png" alt="facebook">
+                            </a>
+                            <a href="https://instagram.com/" target="_blank">
+                                <img class="instagram" src="images/instagram.png" alt="instagram">
+                            </a>
+                            <h3 class="reviews-card-name">Катрина</h3>
+                        </div>
+                        <div class="reviews-card-foto">
+                            <img class="reviews-card-foto" src="images/foto3-reviews.png" alt="foto">
+                        </div>
+                    </div>
+                    <div class="bottom-card">
+                        <p class="reviews-cards-info">Любимый бургер: <br>
+                            Самый вкусный Бургер три сыра</p>
+                        <p class="reviews-card-description">
+                            Бургер с индийским колоритом в хорошем смысле.
+                            Вкуснятина!!! Бургер три сыра -
+                            для тех, кто любит без майонеза.
+                            В общем Я рекомендую этот ресторан - Наш ресторан.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper mySwiper reviews-cards swiper-display">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide shadow-reviews-card">
+                    <div class="up-card">
+                        <div class="reviews-card-img">
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <img class="facebook" src="images/facebook.png" alt="facebook">
+                            </a>
+                            <a href="https://instagram.com/" target="_blank">
+                                <img class="instagram" src="images/instagram.png" alt="instagram">
+                            </a>
+                            <h3 class="reviews-card-name">Мария</h3>
+                        </div>
+                        <div class="reviews-card-foto">
+                            <img class="reviews-card-foto" src="images/foto2-reviews.png" alt="foto">
+                        </div>
+                    </div>
+                    <div class="bottom-card">
+                        <p class="reviews-cards-info">Любимый бургер: <br>
+                            Синий крабсбургер</p>
+
+                        <p class="reviews-card-description">
+                            Очень нравится формат заведения, <br>
+                            такого раньше не видела! Бургеры
+                            очень интересные по вкусу. Ингредиенты
+                            тоже супер: необычные, качественные,
+                            вкусные (корень лотоса, морепродукты).
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide shadow-reviews-card">
+                    <div class="up-card">
+                        <div class="reviews-card-img">
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <img class="facebook" src="images/facebook.png" alt="facebook">
+                            </a>
+                            <a href="https://instagram.com/" target="_blank">
+                                <img class="instagram" src="images/instagram.png" alt="instagram">
+                            </a>
+                            <h3 class="reviews-card-name">Юлия</h3>
+                        </div>
+                        <div class="reviews-card-foto">
+                            <img class="reviews-card-foto" src="images/foto4-reviews.png" alt="foto">
+                        </div>
+                    </div>
+                    <div class="bottom-card">
+                        <p class="reviews-cards-info">Любимый бургер: <br>
+                            Васаби-бургер, Цезарь-бургер</p>
+
+                        <p class="reviews-card-description">
+                            В ресторане чисто и уютно, быстрая
+                            и качественная подача. Все работают слаженно
+                            и в одной команде. Спасибо Вам за Вашу работу!!!
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide shadow-reviews-card">
+                    <div class="up-card">
+                        <div class="reviews-card-img reviews-card-img-left">
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <img class="facebook" src="images/facebook.png" alt="facebook">
+                            </a>
+                            <a href="https://instagram.com/" target="_blank">
+                                <img class="instagram" src="images/instagram.png" alt="instagram">
+                            </a>
+                            <h3 class="reviews-card-name">Илья</h3>
+                        </div>
+                        <div class="reviews-card-foto">
+                            <img class="reviews-card-foto" src="images/foto3-reviews.png" alt="foto">
+                        </div>
+                    </div>
+                    <div class="bottom-card">
+                        <p class="reviews-cards-info">Любимый бургер: <br>
+                            Острый Чикен Чизбургер</p>
+
+                        <p class="reviews-card-description">
+                            Ухх, вот это огонь! Наконец-то я полностью
+                            удовлетворена степенью остроты. Новинка,
+                            от которой реально жжет во рту.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide shadow-reviews-card">
+                    <div class="up-card">
+                        <div class="reviews-card-img reviews-card-img-right">
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <img class="facebook" src="images/facebook.png" alt="facebook">
+                            </a>
+                            <a href="https://instagram.com/" target="_blank">
+                                <img class="instagram" src="images/instagram.png" alt="instagram">
+                            </a>
+                            <h3 class="reviews-card-name">Катрина</h3>
+                        </div>
+                        <div class="reviews-card-foto">
+                            <img class="reviews-card-foto" src="images/foto3-reviews.png" alt="foto">
+                        </div>
+                    </div>
+                    <div class="bottom-card">
+                        <p class="reviews-cards-info">Любимый бургер: <br>
+                            Самый вкусный Бургер три сыра</p>
+                        <p class="reviews-card-description">
+                            Бургер с индийским колоритом в хорошем смысле.
+                            Вкуснятина!!! Бургер три сыра -
+                            для тех, кто любит без майонеза.
+                            В общем Я рекомендую этот ресторан - Наш ресторан.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide shadow-reviews-card">
+                    <div class="up-card">
+                        <div class="reviews-card-img reviews-card-img-right">
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <img class="facebook" src="images/facebook.png" alt="facebook">
+                            </a>
+                            <a href="https://instagram.com/" target="_blank">
+                                <img class="instagram" src="images/instagram.png" alt="instagram">
+                            </a>
+                            <h3 class="reviews-card-name">Наталия</h3>
+                        </div>
+                        <div class="reviews-card-foto">
+                            <img class="reviews-card-foto" src="images/foto3-reviews.png" alt="foto">
+                        </div>
+                    </div>
+                    <div class="bottom-card">
+                        <p class="reviews-cards-info">Любимый бургер: <br>
+                            Завтрак Капитана Америки</p>
+
+                        <p class="reviews-card-description">
+                            О кухне слышала много хороших <br>
+                            отзывов, все правда. Большие порции,
+                            опять таки оооочень вкусно. Рекомендую
+                            этот ресторан, всем именинникам –
+                            каждому уделяют особое внимание.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide shadow-reviews-card">
+                    <div class="up-card">
+                        <div class="reviews-card-img reviews-card-img-right">
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <img class="facebook" src="images/facebook.png" alt="facebook">
+                            </a>
+                            <a href="https://instagram.com/" target="_blank">
+                                <img class="instagram" src="images/instagram.png" alt="instagram">
+                            </a>
+                            <h3 class="reviews-card-name">Николай</h3>
+                        </div>
+                        <div class="reviews-card-foto">
+                            <img class="reviews-card-foto" src="images/foto6-reviews.png" alt="foto">
+                        </div>
+                    </div>
+                    <div class="bottom-card">
+                        <p class="reviews-cards-info">Любимый бургер: <br>
+                            Воппер Шашлычок</p>
+                        <p class="reviews-card-description">
+                            Удачная и вкусная реновация знаменитого
+                            бургера «Воппер» в «Воппер Шашлычок» с
+                            помощью оригинального соуса «Гриль» с
+                            ароматом приятного дымка
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide shadow-reviews-card">
+                    <div class="up-card">
+                        <div class="reviews-card-img reviews-card-img-right">
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <img class="facebook" src="images/facebook.png" alt="facebook">
+                            </a>
+                            <a href="https://instagram.com/" target="_blank">
+                                <img class="instagram" src="images/instagram.png" alt="instagram">
+                            </a>
+                            <h3 class="reviews-card-name">Катрина</h3>
+                        </div>
+                        <div class="reviews-card-foto">
+                            <img class="reviews-card-foto" src="images/foto3-reviews.png" alt="foto">
+                        </div>
+                    </div>
+                    <div class="bottom-card">
+                        <p class="reviews-cards-info">Любимый бургер: <br>
+                            Самый вкусный Бургер три сыра</p>
+                        <p class="reviews-card-description">
+                            Бургер с индийским колоритом в хорошем смысле.
+                            Вкуснятина!!! Бургер три сыра -
+                            для тех, кто любит без майонеза.
+                            В общем Я рекомендую этот ресторан - Наш ресторан.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide shadow-reviews-card">
+                    <div class="up-card">
+                        <div class="reviews-card-img">
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <img class="facebook" src="images/facebook.png" alt="facebook">
+                            </a>
+                            <a href="https://instagram.com/" target="_blank">
+                                <img class="instagram" src="images/instagram.png" alt="instagram">
+                            </a>
+                            <h3 class="reviews-card-name">Роман</h3>
+                        </div>
+                        <div class="reviews-card-foto">
+                            <img src="images/foto1-reviews.png" alt="foto">
+                        </div>
+                    </div>
+                    <div class="bottom-card">
+                        <p class="reviews-cards-info">Любимый бургер: <br>
+                            Самая быстрая курочка Запада (KING SIZE)</p>
+                        <p class="reviews-card-description">
+                            Круто отметили день рождения.
+                            Прекрасное обслуживание, заказали <br>
+                            15 бургеров на всех, никто не остался равнодушным!
+                            В общем Я рекомендую этот ресторан - Наш ресторан.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+    </div>
+
+</section>
+
+<section class="stock">
+    <div class="container stock-container">
+        <div class="stock-title wow animate__animated animate__rubberBand" id="stock">
+            Наши акции
+        </div>
+        <div class="stock-cards">
+
+            <div class="stock-card wow animate__animated animate__jackInTheBox stock-card-grin">
+                <div class="stock-card-grin-burger">
+                    <img src="images/stock/stock-cards-grin.png" alt="Бургер">
+                </div>
+                <div class="stock-card-grin-info">
+                    <h3 class="stock-card-grin-title">
+                        Веганское меню по вторникам
+                    </h3>
+                    <span>-20%</span>
+                </div>
+                <img src="images/stock/stock-cards-grin-list.png" alt="Лист салата">
+            </div>
+
+            <div class="stock-card wow animate__animated animate__jackInTheBox stock-card-violet">
+                <div class="stock-card-violet-info">
+                    <h3 class="stock-card-violet-title">
+                        Пробники-бургеры
+                    </h3>
+                    <span>найди любимый вкус!</span>
+                </div>
+                <div class="stock-card-violet-burger">
+                    <img src="images/stock/burger-violet1.png" alt="Бургер1">
+                    <img src="images/stock/burger-violet2.png" alt="Бургер2">
+                    <img src="images/stock/burger-violet3.png" alt="Бургер3">
+                </div>
+            </div>
+
+            <div class="stock-card wow animate__animated animate__jackInTheBox stock-card-orange">
+                <div class="stock-card-orange-info">
+                    <span class="stock-card-orange-span">Набор, созданный для праздников:</span>
+                    <h3>«Большая компания»</h3>
+                    <p>10 шт <span class="stock-card-orange-span">всего</span> 2000 руб.</p>
+                </div>
+                <div class="stock-card-orange-img">
+                    <img src="images/stock/orange-stock.png" alt="Бургеры">
+                </div>
+            </div>
+
+            <div class="stock-card wow animate__animated animate__jackInTheBox stock-card-orange2">
+                <div class="stock-card-orange-info">
+                    <h3>Набор «Большая компания»</h3>
+                    <div>
+                        <p>10 шт</p>
+                        <p> 2000 руб.</p>
+                    </div>
+                </div>
+                <div class="stock-card-orange-img">
+                    <img src="images/stock/orange-stock.png" alt="Бургеры">
+                </div>
+            </div>
+
+            <div class="stock-card wow animate__animated animate__jackInTheBox stock-card-emerald">
+                <div class="stock-card-emerald-burger-img">
+                    <img src="images/stock/emerald-burger.png" alt="Бургер">
+                </div>
+                <div class="stock-card-emerald-info">
+                    <p>Изучаем подводный мир</p>
+                    <h3>С 14ч по 16ч бургеры с морепродуктами:</h3>
+                    <span>2=1</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="book-table">
+    <div class="container book-table-container">
+        <h2 class="book-table-title wow animate__animated animate__rubberBand" id="book-table">Забронировать стол</h2>
+        <div class="book-table-block">
+            <div class="book-table-img wow animate__animated animate__backInLeft">
+                <img src="images/book-table/book-table-img.png" alt="Биг-Бургер">
+            </div>
+            <div class="book-table-forms order-form wow animate__animated animate__bounceInRight">
+                <span class="book-table-form-span">
+                     Ждем тебя в BoomBurger прямо сейчас.
+                     Оформи бронь в течение 30 минут
+                     и получи напиток в подарок!
+                </span>
+
+                <div class="book-table-timer">
+                    <div class="timer_section">
+                        <div class="minutes-1">0</div>
+                        <div class="minutes-2">0</div>
+
+                        <div class="timer-del">:</div>
+
+                        <div class="seconds-1">0</div>
+                        <div class="seconds-2">0</div>
+                    </div>
+                    <div class="timer-section-desc-min">минуты</div>
+                    <div class="timer-section-desc-sec">секунды</div>
+                </div>
+
+                <form class="book-table-form validate" id="form">
+                    <label for="inputName"></label>
+                    <input class="form-input form-control" name="inputName" type="text" placeholder="Ваше имя"
+                           id="inputName" required>
+
+                    <label for="inputTel"></label>
+                    <input class="form-input form-control mask-phone" type="tel" placeholder="+7(___)___-__-__"
+                           name="inputTel" id="inputTel" required>
+
+                    <button class="btn form-btn" type="submit" value="validate" id="validateButton">
+                        Забронировать стол
+                    </button>
+                    <p>Нажимая на кнопку, вы подтверждаете ваше согласие с <a>политикой конфиденциальности</a>
+                        и обработкой персональных данных.</p>
+                </form>
+                <div id="message"></div>
+
+            </div>
+            <div class="book-table-forms-img">
+                <img src="images/book-table/pngwing-book-table-form.png" alt="Перец-жгучий">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container footer-container">
+        <div class="logo footer-logo">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <div class="footer-address">
+            <span>
+            г. Москва, м.Лубянка, Никольская ул., 24
+                +7 (495) 221-24-34, +7 (495) 287-24-96
+            </span>
+        </div>
+        <div class="footer-icons">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img class="icons facebook" src="images/facebook-footer.png" alt="facebook">
+            </a>
+            <a href="https://instagram.com/" target="_blank">
+                <img class="icons instagram" src="images/instagram-footer.png" alt="instagram">
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+                <img class="icons youtube" src="images/youtube.png" alt="youtube">
+            </a>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="scripts/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="scripts/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="scripts/slick.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.validate.min.js"></script>
+<script type="text/javascript" src="scripts/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="scripts/wow.min.js"></script>
+
+
+<script type="text/javascript" src="scripts/script.js"></script>
+<script type="text/javascript" src="scripts/time.js"></script>
+
+</body>
+</html>
